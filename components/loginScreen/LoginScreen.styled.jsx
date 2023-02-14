@@ -1,0 +1,81 @@
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "#ecf0f1",
+  },
+  image: {
+    width: "100%",
+    height: "100%",
+    justifyContent: "flex-end",
+    resizeMode: "cover",
+  },
+  title: {
+    height: 36,
+    marginBottom: 33,
+    fontFamily: "Roboto-Medium",
+    fontWeight: "500",
+    fontSize: 30,
+    lineHeight: 35,
+    textAlign: "center",
+    letterSpacing: 0.01,
+    color: "#212121",
+  },
+  form: {
+    width: "100%",
+    alignItems: "center",
+    borderTopLeftRadius: 25,
+    borderTopRightRadius: 25,
+    paddingTop: 32,
+    paddingBottom: 145,
+    backgroundColor: "#FFFFFF",
+  },
+  input: {
+    width: 343,
+    height: 50,
+    paddingTop: 16,
+    paddingBottom: 15,
+    paddingLeft: 16,
+    borderWidth: 1,
+    borderRadius: 8,
+    marginBottom: 16,
+    backgroundColor: "#F6F6F6",
+    fontFamily: "Roboto-Regular",
+  },
+  passwordInput: {
+    marginBottom: 43,
+  },
+  showPasswordBtn: {
+    position: "absolute",
+    top: 182,
+    right: 35,
+  },
+  showPasswordBtnText: {
+    fontFamily: "Roboto-Regular",
+    fontSize: 16,
+    color: "#1B4371",
+  },
+  logBtn: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: 343,
+    height: 51,
+    marginBottom: 16,
+    borderRadius: 100,
+    backgroundColor: "#FF6C00",
+  },
+  logBtnText: {
+    fontFamily: "Roboto-Regular",
+    fontSize: 16,
+    color: "#FFFFFF",
+  },
+  loginLink: {
+    fontFamily: "Roboto",
+    fontWeight: "400",
+    fontSize: 16,
+    lineHeight: 19,
+    textAlign: "center",
+    color: "#1B4371",
+  },
+});
