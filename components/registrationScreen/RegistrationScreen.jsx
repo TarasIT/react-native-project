@@ -76,8 +76,6 @@ export const RegistrationScreen = () => {
 
   if (!fontsLoaded) return null;
 
-  console.log(isPasswordVisible);
-
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <View style={styles.container} onLayout={onLayoutRootView}>
