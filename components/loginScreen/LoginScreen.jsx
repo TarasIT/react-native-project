@@ -20,7 +20,7 @@ export const LoginScreen = () => {
   const [password, setPassword] = useState("");
   const [isEmailActive, setIsEmailActive] = useState(false);
   const [isPasswordActive, setIsPasswordActive] = useState(false);
-  const [isPasswordVisible, setIsPasswordVisible] = useState(true);
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   const [fontsLoaded] = useFonts({
     "Roboto-Regular": require("../../assets/fonts/Roboto/Roboto-Regular.ttf"),
@@ -77,7 +77,7 @@ export const LoginScreen = () => {
                 onBlur={() => setIsPasswordActive(false)}
                 onChangeText={passwordHandler}
                 placeholder="Пароль"
-                secureTextEntry={isPasswordVisible}
+                secureTextEntry={!isPasswordVisible}
                 style={[
                   styles.input,
                   styles.passwordInput,

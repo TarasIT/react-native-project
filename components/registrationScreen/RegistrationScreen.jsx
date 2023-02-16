@@ -35,7 +35,7 @@ export const RegistrationScreen = () => {
   const [isLoginActive, setIsLoginActive] = useState(false);
   const [isEmailActive, setIsEmailActive] = useState(false);
   const [isPasswordActive, setIsPasswordActive] = useState(false);
-  const [isPasswordVisible, setIsPasswordVisible] = useState(true);
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const [image, setImage] = useState(null);
 
   const [fontsLoaded] = useFonts({
@@ -75,6 +75,8 @@ export const RegistrationScreen = () => {
   }, [fontsLoaded]);
 
   if (!fontsLoaded) return null;
+
+  console.log(isPasswordVisible);
 
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -132,7 +134,7 @@ export const RegistrationScreen = () => {
                 onBlur={() => setIsPasswordActive(false)}
                 onChangeText={passwordHandler}
                 placeholder="Пароль"
-                secureTextEntry={isPasswordVisible}
+                secureTextEntry={!isPasswordVisible}
                 style={[
                   styles.input,
                   styles.passwordInput,

@@ -14,8 +14,10 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "jsEngine": "jsc"
     },
+    "jsEngine": "hermes",
     "plugins": [
       [
         "expo-image-picker",
