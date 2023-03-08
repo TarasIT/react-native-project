@@ -16,8 +16,8 @@ import { Shadow } from "react-native-shadow-2";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { styles } from "./RegistrationScreen.styled";
-import LoadAvatarSvgComponent from "../loadAvatarSvgComponent";
 import * as ImagePicker from "expo-image-picker";
+import LoadAvatarComponent from "../../assets/images/plus.svg";
 
 const ShadowPresets = {
   input: {
@@ -87,7 +87,7 @@ export const RegistrationScreen = () => {
             <View style={styles.form}>
               <View style={styles.avatar}>
                 <Pressable style={styles.loadAvatarBtn} onPress={pickImage}>
-                  <LoadAvatarSvgComponent />
+                  <LoadAvatarComponent />
                 </Pressable>
                 {image && (
                   <Image

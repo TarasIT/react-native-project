@@ -13,16 +13,20 @@
     "expo": "~47.0.8",
     "expo-app-loading": "~2.1.1",
     "expo-font": "^11.0.1",
+    "expo-image-picker": "~14.0.2",
     "expo-splash-screen": "~0.17.5",
     "expo-status-bar": "~1.4.2",
+    "moment": "^2.29.4",
+    "nanoid": "^4.0.1",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-native": "0.70.5",
     "react-native-flex-layout": "^0.1.5",
+    "react-native-get-random-values": "^1.8.0",
     "react-native-shadow-2": "^7.0.6",
     "react-native-svg": "^13.4.0",
-    "react-native-web": "~0.18.9",
-    "expo-image-picker": "~14.0.2"
+    "react-native-svg-transformer": "^1.0.0",
+    "react-native-web": "~0.18.9"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
